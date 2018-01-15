@@ -10,7 +10,22 @@ public class WaltzerTest {
 
     @Before
     public void before() {
-        waltzer = new Waltzer(5, 5, 44);
+        waltzer = new Waltzer(5, 3, 44);
+    }
+
+    @Test
+    public void hasPrice() {
+        assertEquals(5.0, waltzer.getPrice());
+    }
+
+    @Test
+    public void hasMinAge() {
+        assertEquals(3, waltzer.getMinAge());
+    }
+
+    @Test
+    public void hasMinHeight() {
+        assertEquals(44, waltzer.getMinHeight(), 0.0);
     }
 
 }

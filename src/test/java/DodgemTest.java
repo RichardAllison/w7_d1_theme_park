@@ -13,4 +13,19 @@ public class DodgemTest {
         dodgem = new Dodgem(5.0, 7, 48);
     }
 
+    @Test
+    public void hasPrice() {
+        assertEquals(5.0, dodgem.getPrice());
+    }
+
+    @Test
+    public void hasMinAge() {
+        assertEquals(7, dodgem.getMinAge());
+    }
+
+    @Test
+    public void hasMinHeight() {
+        assertEquals(48, dodgem.getMinHeight(), 0.0);
+    }
+
 }

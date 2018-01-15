@@ -16,4 +16,24 @@ public class ChildTest {
         child = new Child("Jimmy", 6, 48, 10, adult);
     }
 
+    @Test
+    public void hasName() {
+        assertEquals("Jimmy", child.getName());
+    }
+
+    @Test
+    public void hasAge() {
+        assertEquals(6, child.getAge());
+    }
+
+    @Test
+    public void hasHeight() {
+        assertEquals(48, child.getHeight(), 0.0);
+    }
+
+    @Test
+    public void hasWallet() {
+        assertEquals(10, child.getWallet(), 0.0);
+    }
+
 }
