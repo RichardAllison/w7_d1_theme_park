@@ -29,4 +29,9 @@ public class CustomerTest {
         assertEquals(100, adult.getWallet(), 0.0);
     }
 
+    @Test
+    public void payment() {
+        System.out.println(adult.makePayment(20));
+    }
+
 }
